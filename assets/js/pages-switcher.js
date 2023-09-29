@@ -1,6 +1,6 @@
 var PageTransitions = (function (a, e) {
   "use strict";
-  var t = "home",
+  var t = "inicio",
     p = a(".subpages"),
     o = !1,
     r = !0,
