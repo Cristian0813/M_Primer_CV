@@ -1,0 +1,9 @@
+info-list
+service-block
+service-info
+testimonials
+fun-fact-block
+gray-bg
+client-block
+#eee por #999
+font-weight: 500;

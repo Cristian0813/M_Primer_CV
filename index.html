@@ -1,89 +1,994 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Mi CV</title>
+    <title>Protafolio Cristian Javier Arias Ordoñez</title>
+    <link rel="shortcut icon" href="assets/images/public/Logo_Cristian_A_3.webp" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
     
-    <script src="https://kit.fontawesome.com/f826eb8975.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/animacion.css" />
+
+    <link rel="stylesheet" href="assets/css/animation/animate.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/animation/transition-animations.css"
+      type="text/css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="assets/css/animation/jquery.mCustomScrollbar.min.css"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="assets/css/animation/owl.carousel.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/animation/magnific-popup.css" type="text/css" />
+
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+
+    <!-- This styles needs for demo -->
+    <link
+      rel="stylesheet"
+      href="assets/preview/lmpixels-demo-panel.css"
+      type="text/css"
+    />
+    <!-- /This styles needs for demo -->
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-T6KTHVLZB0"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-T6KTHVLZB0");
+    </script>
+    <!-- /Google tag (gtag.js) -->
+
+    <script src="assets/js/jquery-2.1.3.min.js"></script>
+    <script src="assets/js/modernizr.custom.js"></script>
   </head>
-  <!-- Cuerpo de la pagína -->
-  <body class="Fondo">
-      <h1>Hola soy Cristian J Arias O</h1>      
-      <section class="button">
-        <a href="https://wa.me/573175953769"  target="_blank" class="fa-brands fa-whatsapp"></a> <br>
-        <a href="https://es-la.facebook.com/Cris9013/" target="_blank" class="fa-brands fa-facebook"></a><br>
-        <a href="https://www.instagram.com/javier.9013/" target="_blank" class="fa-brands fa-instagram"></a><br>
-        <a href="https://www.linkedin.com/in/cristian-j-arias-o/" target="_blank" class="fa-brands fa-linkedin"></a><br>
-        <a href="mailto:javier.0813@hotmail.com" class="fa-solid fa-envelope-open-text"></a><br>
-      </section>
-          <div class="imag_center">
-            <img src="assets/Cristian_A.jpg" alt="Cristian" width="159px" height="282px" style="border-radius: 20px">
+
+  <body>
+    <!-- Loading animation -->
+    <div class="preloader">
+      <div class="preloader-animation">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+      </div>
+    </div>
+    <!-- /Loading animation -->
+
+    <div id="page" class="page">
+      <!-- Header -->
+      <header
+        id="site_header"
+        class="header mobile-menu-hide header-color-light"
+      >
+        <div class="my-photo tilt-effect">
+          <img
+            src="assets/images/Cristian_A_preview-2.webp"
+            alt="Cristian Arias"
+            style="border-radius: 50%;"
+          />
+        </div>
+
+        <div class="site-title-block">
+          <h1 class="site-title" style="font-size: larger">
+            Cristian Javier Arias Ordoñez
+          </h1>
+        </div>
+
+        <!-- Navigation -->
+        <div class="site-nav">
+          <!-- Main menu -->
+          <ul id="nav" class="site-main-menu">
+            <li>
+              <a class="pt-trigger" href="#inicio" data-animation="21"
+                ><i class="menu-icon get-font-icon bi bi-house-door"></i
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a class="pt-trigger" href="#sobre_mi" data-animation="17"
+                ><i class="menu-icon get-font-icon bi bi-person-workspace"></i
+                >Acerca de mí</a
+              >
+            </li>
+            <li>
+              <a class="pt-trigger" href="#resumen" data-animation="18"
+                ><i class="menu-icon get-font-icon bi bi-journal-text"></i
+                >Resumen</a
+              >
+            </li>
+            <li>
+              <a class="pt-trigger" href="#portafolio" data-animation="19"
+                ><i class="menu-icon get-font-icon bi bi-code-square"></i
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a class="pt-trigger" href="#contacto" data-animation="20"
+                ><i class="menu-icon get-font-icon bi bi-at"></i>Contactame</a
+              >
+            </li>
+          </ul>
+          <!-- /Main menu -->
+        </div>
+        <!-- Navigation -->
+      </header>
+      <!-- /Header -->
+
+      <!-- Mobile Header -->
+      <div class="mobile-header mobile-visible">
+        <div class="mobile-logo-container">
+          <div class="mobile-site-title">
+            <img
+              class="mobile-site-item"
+              style="width: 40px; border-radius: 100%"
+              src="assets/images/public/Logo_Cristian_A_1.webp"
+              alt="Logo_Cristian_A_2"
+              srcset=""
+            />
+            <img
+              class="mobile-site-item"
+              style="width: 40px; border-radius: 100%"
+              src="assets/images/public/Logo_Cristian_A_2.webp"
+              alt="Logo_Cristian_A_2"
+              srcset=""
+            />
+            <img
+              class="mobile-site-item"
+              style="width: 40px; border-radius: 100%"
+              src="assets/images/public/Logo_Cristian_A_3.webp"
+              alt="Logo_Cristian_A_2"
+              srcset=""
+            />
+            <img
+              class="mobile-site-item"
+              style="width: 40px; border-radius: 100%"
+              src="assets/images/public/Logo_Cristian_A_4.webp"
+              alt="Logo_Cristian_A_2"
+              srcset=""
+            />
           </div>
-      <table style="width: 100%">
-        <tr>
-          <th>Me llamo</th>
-          <th>Mis hobbies</th>
-        </tr>
-        <tr>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, molestias deserunt. Voluptates eveniet reiciendis nulla aliquid expedita, consectetur dolorem quibusdam, est voluptate libero neque cumque odit voluptatum maxime illo beatae.</p>
-          <td>Yo tengo 32 años de edad, <br> actualmente me encuentra cursando <br> Web Full Stack con PROtanlento,<br> mejorando mi habilidades <br> de conocimiento de tecnólogo ADSI.</td>
-          <td>Disfruto mucho salir en moto<br>Me encanta los videojuegos<br>Practicar<br>salir con mi sobrina</td>
-        </tr>
-      </table>
-  </body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi CV</title>
-    <script src="https://kit.fontawesome.com/f826eb8975.js" crossorigin="anonymous"></script>
-  </head>
-  <!--Estilo de la pagína-->
-  <style>
-      .imag_center{text-align: center; display: block;}
-      .imgf{margin-left: 80%;}
-      .cep{text-align: center; display: block;}
-      .Fondo{background-image: url("assets/Fondo_1.png"); background-repeat: no-repeat; background-position: 50%; background-size: 1400px; background-attachment: fixed;}
-      .button{margin: 0; position: absolute; top: 5%; left: 97%; min-width: 700px;}
-      .button a{text-decoration: none; font-size: 28px; width: 40px; height: 40px;line-height: 40px; text-align: center; background: #314652; color:#f1f1f1; border-radius: 50%; box-shadow: 5px 5px 5px rgb(0, 0, 0, .5); transition: all .4s ease-in-out;}
-      .button a:hover{transform:  scale(1.2);}
-      /* i{text-align: center; font-size: 25px; color: black; margin: 20px; border-radius: 50%; padding: 15px; box-shadow: 0px 5px 10px rgb(0,0,0,.35); transition: .3s ease;} */
-      h1 {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;text-align: center;color: rgb(112, 14, 14);}
-      p {font-style: italic;}
-      li {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
-      body {background-color:rgba(239, 177, 245, 0.281);}
-  </style> 
-  <!-- Cuerpo de la pagína -->
-  <body class="Fondo">
-      <h1>Hola soy Cristian J Arias O</h1>      
-      <section class="button">
-        <a href="https://wa.me/573175953769"  target="_blank" class="fa-brands fa-whatsapp"></a> <br>
-        <a href="https://es-la.facebook.com/Cris9013/" target="_blank" class="fa-brands fa-facebook"></a><br>
-        <a href="https://www.instagram.com/javier.9013/" target="_blank" class="fa-brands fa-instagram"></a><br>
-        <a href="https://www.linkedin.com/in/cristian-j-arias-o/" target="_blank" class="fa-brands fa-linkedin"></a><br>
-        <a href="mailto:javier.0813@hotmail.com" class="fa-solid fa-envelope-open-text"></a><br>
-      </section>
-          <div class="imag_center">
-            <img src="assets/Cristian_A.jpg" alt="Cristian" width="159px" height="282px" style="border-radius: 20px">
+        </div>
+
+        <a class="menu-toggle mobile-visible">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <!-- /Mobile Header -->
+
+      <!-- Main Content -->
+      <div id="main" class="site-main">
+        <!-- Page changer wrapper -->
+        <div class="pt-wrapper background-wrapper">
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <span class="span-animation"></span>
+          <!-- Subpages -->
+          <div class="subpages">
+            <!-- Home Subpage -->
+            <section
+              class="pt-page pt-page-1 section-without-bg section-paddings-0 table"
+              data-id="inicio"
+            >
+              <div class="section-inner">
+                <div class="home-page-block">
+                  <h2>Cristian Arias</h2>
+                  <div class="owl-carousel text-rotation">
+                    <div class="item">
+                      <p class="home-page-description">Desarrollador Web</p>
+                    </div>
+                    <div class="item">
+                      <p class="home-page-description">Frontend</p>
+                    </div>
+                    <div class="item">
+                      <p class="home-page-description">Backend</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End of Home Subpage -->
+
+            <!-- About Me Subpage -->
+            <section class="pt-page pt-page-2" data-id="sobre_mi">
+              <div class="border-block-top-110"></div>
+              <div class="section-inner">
+                <div class="section-title-block">
+                  <div class="section-title-wrapper clearfix">
+                    <h2 class="section-title">Acerca de mí</h2>
+                    <p class="section-description">
+                      Innovador, Creativo, Desarrollador
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 col-lg-4 subpage-block">
+                    <div class="my-photo-block tilt-effect">
+                      <img
+                        src="assets/images/Cristian_A_preview.webp"
+                        alt="CristianJavierAriasO"
+                        style="border-radius: 20%"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-6 col-lg-8">
+                    <h3 style="text-align: center">
+                      Soy Desarrollador Web Full-Stack
+                    </h3>
+                    <hr />
+                    <p>
+                      En mi universo personal, fusiono habilidades técnicas y
+                      creativas para crear sitios web atractivos en la parte del
+                      <strong>Frontend</strong>. Mi caja de herramientas incluye
+                      lenguajes como HTML5, JavaScript y CSS3, respaldados por
+                      Frameworks como React y Bootstrap, que garantizan un
+                      diseño adaptativo para cualquier dispositivo.
+                    </p>
+                    <p>
+                      En el ámbito del desarrollo <strong>Backend</strong>, he
+                      trabajado con diversas bases de datos, como MySQL,
+                      PostgresSQL, MongoDB y NoSQL, aprovechando Frameworks
+                      especializados como Node.js y Express.js. Además, soy
+                      hábil en el control de versiones a través de
+                      <strong>Git</strong>.
+                    </p>
+                    <p>
+                      Siempre estoy en búsqueda de soluciones innovadoras que
+                      mejoren la experiencia del usuario final y, al mismo
+                      tiempo, optimicen el rendimiento general de los sitios web
+                      o aplicaciones que desarrollo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End of About Me Subpage -->
+
+            <!-- Resume Subpage -->
+            <section class="pt-page pt-page-3" data-id="resumen">
+              <div class="border-block-top-110"></div>
+              <div class="section-inner">
+                <div class="section-title-block">
+                  <div class="section-title-wrapper">
+                    <h2 class="section-title">Resumen</h2>
+                    <p class="section-description">
+                      1 año de experiencia como Developer
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-6 col-md-4 subpage-block">
+                    <div class="block-title">
+                      <h3>Curriculum vitae</h3>
+                    </div>
+                    <div class="timeline">
+                      <div class="download-cv-block timeline-event te-primary">
+                        <a
+                          class="button"
+                          target="_blank"
+                          href="./public/document/CV_Crisitan_Javier_Arias_Ordoñez.pdf"
+                          >Download CV</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="block-title">
+                      <h3>Educación</h3>
+                    </div>
+                    <div class="timeline">
+                      <!-- Single event -->
+                      <div class="timeline-event te-primary">
+                        <p class="event-date">2023</p>
+                        <h4 class="event-name">Desarrollador Full-Stack</h4>
+                        <h5 class="event-description">Dev.F</h5>
+                        <p>
+                          En Devf, un bootcamp tecnológico, adquirí habilidades
+                          avanzadas en diseño web con HTML5, CSS3, JavaScript y
+                          React. Trabajé en proyectos prácticos que
+                          fortalecieron mi capacidad para resolver problemas en
+                          entornos reales. Estoy preparado(a) para los desafíos
+                          del desarrollo web moderno.
+                        </p>
+                      </div>
+                      <!-- Single event -->
+                      <div class="timeline-event te-primary">
+                        <p class="event-date">2012</p>
+                        <h4 class="event-name">Tecnología ADSI</h4>
+                        <h5 class="event-description">
+                          Servicio Nacional de Aprendizaje (SENA)
+                        </h5>
+                        <p>
+                          En mi experiencia en Programación de Sistemas de
+                          Información, he adquirido conocimientos en análisis,
+                          desarrollo y programación de sistemas informáticos.
+                          Destaco en Java y MySQL para crear soluciones
+                          eficientes que impulsen el crecimiento de
+                          organizaciones y comunidades.
+                        </p>
+                      </div>
+                      <!-- Single event -->
+                      <div class="timeline-event te-primary">
+                        <p class="event-date">2010</p>
+                        <h4 class="event-name">Técnico en Sistemas</h4>
+                        <h5 class="event-description">CompuBuga</h5>
+                        <p>
+                          Tengo la capacidad de poder desarrollarme en varios
+                          frentes de trabajo, como el ensamble y mantenimiento
+                          de computadores, el montaje y soporte de redes de
+                          datos (alámbricas e inalámbricas) y el desarrollo de
+                          páginas web; lo que me permitirá tener mayores
+                          posibilidades de empleo una vez finalice mis estudios.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-4 subpage-block">
+                    <div class="block-title">
+                      <h3>Experiencia</h3>
+                    </div>
+                    <div class="timeline">
+                      <!-- Single event -->
+                      <div class="timeline-event te-primary">
+                        <p class="event-date">Nov 2022 - Jul 2023</p>
+                        <h4 class="event-name">
+                          Desarrollador Web Full Stack Aprendiz
+                        </h4>
+                        <h5 class="event-description">PROtalento</h5>
+                        <p>
+                          Desarrollar páginas web que cumplen con
+                          lascaracterísticas específicas que se requieren. Para
+                          lograr esto, utilizo lenguajes como Html5, Css3,
+                          Nodejs y JavaScript, que me permiten diseñar y
+                          programar sitiosweb atractivos y funcionales.
+                        </p>
+                      </div>
+                      <!-- Single event -->
+                      <div class="timeline-event te-primary">
+                        <p class="event-date">Ago 2020 - Ene 2023</p>
+                        <h4 class="event-name">Asesor RAC vía Chat</h4>
+                        <h5 class="event-description">Atento Colombia</h5>
+                        <p>
+                          Proporcionar un servicio de soporte técnico y
+                          comercial de alta calidad, gestionando eficientemente
+                          las solicitudes y quejas de los clientes, con el
+                          objetivo de lograr su plena satisfacción.
+                        </p>
+                        <p>
+                          Recibir reconocimiento y elogios por parte de la
+                          organización por la excelente gestión de las
+                          peticiones y quejas, destacando por un enfoque
+                          proactivo, soluciones efectivas y un trato amable y
+                          respetuoso con los clientes.
+                        </p>
+                      </div>
+                      <!-- Single event -->
+                      <div class="timeline-event te-primary">
+                        <p class="event-date">May 2019 - May 2023</p>
+                        <h4 class="event-name">Auxiliar general</h4>
+                        <h5 class="event-description">Compass Group</h5>
+                        <p>
+                          Brindar un servicio excepcional y una atención de
+                          calidad a los comensales,asegurándose de cumplir con
+                          los estándares y requisitos establecidos por
+                          laempresa. Buscar constantemente oportunidades para
+                          aumentar las ventas.Demostrar habilidades de
+                          comunicación efectiva, empatía para garantizar laplena
+                          satisfacción del cliente.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-4 subpage-block">
+                    <div class="block-title">
+                      <h3>Competencias de diseño</h3>
+                    </div>
+                    <div class="skills-info">
+                      <h4>Disarrollador Web</h4>
+                      <div class="skill-container">
+                        <div class="skill-percentage skill-1"></div>
+                      </div>
+
+                      <h4>Desarrollador Software</h4>
+                      <div class="skill-container">
+                        <div class="skill-percentage skill-3"></div>
+                      </div>
+                    </div>
+
+                    <div class="block-title">
+                      <h3>Competencias de codificación</h3>
+                    </div>
+                    <div class="skills-info">
+                      <h4>HML5</h4>
+                      <div class="skill-container">
+                        <div class="skill-percentage skill-4"></div>
+                      </div>
+
+                      <h4>CSS3</h4>
+                      <div class="skill-container">
+                        <div class="skill-percentage skill-5"></div>
+                      </div>
+
+                      <h4>JavaScript</h4>
+                      <div class="skill-container">
+                        <div class="skill-percentage skill-6"></div>
+                      </div>
+
+                      <h4>NodeJs</h4>
+                      <div class="skill-container">
+                        <div class="skill-percentage skill-7"></div>
+                      </div>
+
+                      <h4>PHP</h4>
+                      <div class="skill-container">
+                        <div class="skill-percentage skill-8"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End Resume Subpage -->
+
+            <!-- Portfolio Subpage -->
+            <section class="pt-page pt-page-4" data-id="portafolio">
+              <div class="border-block-top-110"></div>
+              <div class="section-inner">
+                <div class="section-title-block">
+                  <div class="section-title-wrapper">
+                    <h2 class="section-title">Portafolio</h2>
+                    <p class="section-description">Mis proyectos</p>
+                  </div>
+                </div>
+
+                <!-- Portfolio Content -->
+                <div class="portfolio-content">
+                  <!-- Portfolio filter -->
+                  <ul id="portfolio_filters" class="portfolio-filters">
+                    <li class="active">
+                      <a
+                        class="filter btn btn-sm btn-link active"
+                        data-group="all"
+                        >All</a
+                      >
+                    </li>
+                    <li>
+                      <a class="filter btn btn-sm btn-link" data-group="media"
+                        >Media</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="filter btn btn-sm btn-link"
+                        data-group="illustration"
+                        >Illustration</a
+                      >
+                    </li>
+                    <li>
+                      <a class="filter btn btn-sm btn-link" data-group="video"
+                        >Video</a
+                      >
+                    </li>
+                  </ul>
+                  <!-- End of Portfolio filter -->
+
+                  <!-- Portfolio Grid -->
+                  <div
+                    id="portfolio_grid"
+                    class="portfolio-grid portfolio-masonry masonry-grid-3"
+                  >
+                    <!-- Portfolio Item 1 -->
+                    <figure class="item" data-groups='["all", "media"]'>
+                      <a class="ajax-page-load" href="assets/portafolio/atm.html">
+                        <img src="assets/images/portfolio/1.jpg" alt="" />
+                        <div>
+                          <h5 class="name">Cajero Automático</h5>
+                          <i class="get-font-icon bi bi-display"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 1 -->
+
+                    <!-- Portfolio Item 2 -->
+                    <figure class="item" data-groups='["all", "video"]'>
+                      <a
+                        href="https://player.vimeo.com/video/97102654?autoplay=1"
+                        title="Praesent Dolor Ex"
+                        class="lightbox mfp-iframe"
+                      >
+                        <img src="assets/images/portfolio/2.jpg" alt="" />
+                        <div>
+                          <h5 class="name">Project Name</h5>
+                          <small>Video</small>
+                          <i class="get-font-icon bi bi-camera-video"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 2 -->
+
+                    <!-- Portfolio Item 3 -->
+                    <figure class="item" data-groups='["all","illustration"]'>
+                      <a
+                        href="assets/images/portfolio/full/3.jpg"
+                        class="lightbox"
+                        title="Duis Eu Eros Viverra"
+                      >
+                        <img src="assets/images/portfolio/3.jpg" alt="" />
+                        <div>
+                          <h5 class="name">Project Name</h5>
+                          <small>Illustration</small>
+                          <i class="get-font-icon bi bi-camera"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 3 -->
+
+                    <!-- Portfolio Item 4 -->
+                    <figure class="item" data-groups='["all", "media"]'>
+                      <a class="ajax-page-load" href="assets/portafolio/portfolio-2.html">
+                        <img src="assets/images/portfolio/4.jpg" alt="" />
+                        <div>
+                          <h5 class="name">Project Name</h5>
+                          <small>Media</small>
+                          <i class="get-font-icon bi bi-display"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 4 -->
+
+                    <!-- Portfolio Item 5 -->
+                    <figure class="item" data-groups='["all", "illustration"]'>
+                      <a
+                        href="assets/images/portfolio/full/5.jpg"
+                        class="lightbox"
+                        title="Aliquam Condimentum Magna Rhoncus"
+                      >
+                        <img src="assets/images/portfolio/5.jpg" alt="" />
+                        <div>
+                          <h5 class="name">Project Name</h5>
+                          <small>Illustration</small>
+                          <i class="get-font-icon bi bi-camera"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 5 -->
+
+                    <!-- Portfolio Item 6 -->
+                    <figure class="item" data-groups='["all", "media"]'>
+                      <a class="ajax-page-load" href="assets/portafolio/portfolio-3.html">
+                        <img src="assets/images/portfolio/6.jpg" alt="" />
+                        <div>
+                          <h5 class="name">Project Name</h5>
+                          <small>Media</small>
+                          <i class="get-font-icon bi bi-display"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 6 -->
+
+                    <!-- Portfolio Item 7 -->
+                    <figure class="item" data-groups='["all", "video"]'>
+                      <a
+                        href="https://player.vimeo.com/video/97102654?autoplay=1"
+                        title="Nulla Facilisi"
+                        class="lightbox mfp-iframe"
+                      >
+                        <img src="assets/images/portfolio/7.jpg" alt="" />
+                        <div>
+                          <h5 class="name">Project Name</h5>
+                          <small>Video</small>
+                          <i class="get-font-icon bi bi-camera-video"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 7 -->
+
+                    <!-- Portfolio Item 8 -->
+                    <figure class="item" data-groups='["all",  "media"]'>
+                      <a class="ajax-page-load" href="assets/portafolio/portfolio-4.html">
+                        <img src="assets/images/portfolio/8.jpg" alt="" />
+                        <div>
+                          <h5 class="name">Project Name</h5>
+                          <small>Media</small>
+                          <i class="get-font-icon bi bi-display"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 8 -->
+
+                    <!-- Portfolio Item 9 -->
+                    <figure class="item" data-groups='["all","illustration"]'>
+                      <a
+                        href="assets/images/portfolio/full/9.jpg"
+                        class="lightbox"
+                        title="Mauris Neque Dolor"
+                      >
+                        <img src="assets/images/portfolio/9.jpg" alt="" />
+                        <div>
+                          <h5 class="name">Project Name</h5>
+                          <small>Illustration</small>
+                          <i class="get-font-icon bi bi-camera"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 9 -->
+
+                    <!-- Portfolio Item 10 -->
+                    <figure class="item" data-groups='["all", "video"]'>
+                      <a
+                        href="https://player.vimeo.com/video/97102654?autoplay=1"
+                        title="Donec Lectus Arcu"
+                        class="lightbox mfp-iframe"
+                      >
+                        <img src="assets/images/portfolio/10.jpg" alt="" />
+                        <div>
+                          <h5 class="name">Project Name</h5>
+                          <small>Video</small>
+                          <i class="get-font-icon bi bi-camera-video"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 10 -->
+
+                    <!-- Portfolio Item 11 -->
+                    <figure class="item" data-groups='["all","illustration"]'>
+                      <a
+                        href="assets/images/portfolio/full/11.jpg"
+                        class="lightbox"
+                        title="Duis Eu Eros Viverra"
+                      >
+                        <img src="assets/images/portfolio/11.jpg" alt="" />
+                        <div>
+                          <h5 class="name">Project Name</h5>
+                          <small>Illustration</small>
+                          <i class="get-font-icon bi bi-camera"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 11 -->
+
+                    <!-- Portfolio Item 12 -->
+                    <figure class="item" data-groups='["all","media"]'>
+                      <a class="ajax-page-load" href="assets/portafolio/portfolio-5.html">
+                        <img src="assets/images/portfolio/12.jpg" alt="" />
+                        <div>
+                          <h5 class="name">Project Name</h5>
+                          <small>Media</small>
+                          <i class="get-font-icon bi bi-display"></i>
+                        </div>
+                      </a>
+                    </figure>
+                    <!-- /Portfolio Item 12 -->
+                  </div>
+                  <!-- /Portfolio Grid -->
+                </div>
+                <!-- /Portfolio Content -->
+              </div>
+            </section>
+            <!-- /Portfolio Subpage -->
+
+            <!-- Contact Subpage -->
+            <section class="pt-page pt-page-5" data-id="contacto">
+              <div class="border-block-top-110"></div>
+              <div class="section-inner">
+                <div class="section-title-block">
+                  <div class="section-title-wrapper">
+                    <h2 class="section-title">Contactame</h2>
+                    <p class="section-description">Ponte en contacto</p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 subpage-block">
+                    <div class="block-title">
+                      <h3>Contacte conmigo</h3>
+                    </div>
+                    <!-- Contact-info-block -->
+                    <div class="contact-info-block">
+                      <p>
+                        ¡No dudes en ponerte en contacto conmigo! Estoy
+                        disponible a través de diversas plataformas para
+                        responder tus consultas, colaborar en proyectos o
+                        simplemente charlar.
+                      </p>
+                      <ul class="social-links">
+                        <li>
+                          <a
+                            class="tip social-button"
+                            target="_blank"
+                            href="tel:+573175953769"
+                            title="Teléfono"
+                            ><i class="fa-solid fa-phone-volume"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="tip social-button"
+                            target="_blank"
+                            href="https://wa.me/573175953769"
+                            title="WhatsApp"
+                            ><i class="fa fa-whatsapp"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="tip social-button"
+                            target="_blank"
+                            href="mailto:javier.0813@hotmail.com"
+                            title="E-mail"
+                            ><i class="fa-solid fa-envelopes-bulk"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="tip social-button"
+                            target="_blank"
+                            href="https://join.skype.com/invite/fNWu15xLwbVy"
+                            title="Skype"
+                            ><i class="fa-brands fa-skype"></i
+                          ></a>
+                        </li>
+                      </ul>
+                      <ul class="social-links">
+                        <p>Además, estoy activo en varias redes sociales:</p>
+                        <li>
+                          <a
+                            class="tip social-button"
+                            target="_blank"
+                            href="https://www.facebook.com/CristianJavierAriasO"
+                            title="Facebook"
+                            ><i class="fa fa-facebook"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="tip social-button"
+                            target="_blank"
+                            href="https://www.instagram.com/javier.9013/"
+                            title="Instagram"
+                            ><i class="fa-brands fa-instagram"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="tip social-button"
+                            target="_blank"
+                            href="https://www.github.com/Cristian0813"
+                            title="GitHub"
+                            ><i class="fa-brands fa-github"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            class="tip social-button"
+                            target="_blank"
+                            href="https://www.discord.com/users/769380848796696586"
+                            title="Discord"
+                            ><i class="fa-brands fa-discord"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- /Contact-info-block -->
+                  <!-- Contact-form -->
+                  <div class="col-sm-6 col-md-6 subpage-block">
+                    <div class="block-title">
+                      <h3>Formulario de contacto</h3>
+                    </div>
+                    <!-- Form -->
+                    <form id="contact-form" method="post" action="">
+                      <div class="messages"></div>
+                      <div class="controls">
+                        <div class="form-group">
+                          <input
+                            id="form_name"
+                            type="text"
+                            name="name"
+                            class="form-control"
+                            placeholder="Nombre Completo"
+                            required="required"
+                            data-error="El nombre es obligatorio."
+                          />
+                          <div class="form-control-border"></div>
+                          <i
+                            class="form-control-icon fa-regular fa-circle-user"
+                          ></i>
+                          <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group">
+                          <input
+                            id="form_email"
+                            type="email"
+                            name="email"
+                            class="form-control"
+                            placeholder="E-mail"
+                            required="required"
+                            data-error="Se requiere un correo electrónico válido."
+                          />
+                          <div class="form-control-border"></div>
+                          <i
+                            class="form-control-icon fa-regular fa-envelope"
+                          ></i>
+                          <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group">
+                          <textarea
+                            id="form_message"
+                            name="message"
+                            class="form-control"
+                            placeholder="Agregue el mensaje"
+                            rows="4"
+                            required="required"
+                            data-error="Por favor, déjeme un mensaje."
+                          ></textarea>
+                          <div class="form-control-border"></div>
+                          <i
+                            class="form-control-icon bi bi-chat-square-text"
+                          ></i>
+                          <div class="help-block with-errors"></div>
+                        </div>
+                        <input
+                          type="submit"
+                          class="button btn-send"
+                          value="Enviar mensaje"
+                        />
+                      </div>
+                    </form>
+                    <!-- /Form -->
+                  </div>
+                  <!-- /Contact-form -->
+                </div>
+              </div>
+            </section>
+            <!-- End Contact Subpage -->
           </div>
-      <table style="width: 100%">
-        <tr>
-          <th>Me llamo</th>
-          <th>Mis hobbies</th>
-        </tr>
-        <tr>
-          <td>Yo tengo 32 años de edad, <br> actualmente me encuentra cursando <br> Web Full Stack con PROtanlento,<br> mejorando mi habilidades <br> de conocimiento de tecnólogo ADSI.</td>
-          <td>Disfruto mucho salir en moto<br>Me encanta los videojuegos<br>Practicar<br>salir con mi sobrina</td>
-        </tr>
-      </table>
+        </div>
+        <!-- /Page changer wrapper -->
+      </div>
+      <!-- /Main Content -->
+    </div>
+
+    <!-- Demo Color changer -->
+    <a id="lm_demo_panel_switcher" class="lm-demo-panel-switcher right"
+      ><i class="fa fa-gear"></i
+    ></a>
+    <div id="lm_demo_panel" class="lm-demo-panel right panel-color-red active">
+      <div class="demo-panel-title">Template Style</div>
+      <div id="t_style" class="demo-panel-options">
+        <a
+          class="current-t-style t-style-switcher"
+          data-id="template-style-light"
+          ><div class="preview w-border t-style t-style-light">Light</div></a
+        >
+        <a class="t-style-switcher" data-id="template-style-dark"
+          ><div class="preview t-style t-style-dark">Dark</div></a
+        >
+      </div>
+
+      <div class="demo-panel-title">Main Color</div>
+      <div id="main_color" class="demo-panel-options">
+        <a data-id="red" class="current-main-color">
+          <div class="preview color-1">&nbsp;</div></a
+        >
+        <a data-id="blue"><div class="preview color-2">&nbsp;</div></a>
+        <a data-id="green"><div class="preview color-3">&nbsp;</div></a>
+        <a data-id="orange"><div class="preview color-4">&nbsp;</div></a>
+        <a data-id="yellow"><div class="preview color-5">&nbsp;</div></a>
+        <a data-id="violet"><div class="preview color-6">&nbsp;</div></a>
+      </div>
+
+      <div class="demo-panel-title">Nav Color</div>
+      <div id="header_color" class="demo-panel-options">
+        <a
+          class="current-h-color inverse h-color-switcher"
+          data-id="header-color-light"
+          ><div class="preview h-color h-color-1 w-border">&nbsp;</div></a
+        >
+        <a class="h-color-switcher" data-id="header-color-main"
+          ><div class="preview h-color h-color-2">&nbsp;</div></a
+        >
+        <a class="h-color-switcher" data-id="header-color-dark"
+          ><div class="preview h-color h-color-3">&nbsp;</div></a
+        >
+      </div>
+
+      <div class="demo-panel-title mobile-hidden">Nav Position</div>
+      <div id="header_position" class="demo-panel-options mobile-hidden">
+        <a class="current-layout layout-switcher" data-id="layout-menu-right"
+          ><div class="preview layout right">Right</div></a
+        >
+        <a class="current-layout layout-switcher" data-id="layout-menu-left"
+          ><div class="preview layout left">Left</div></a
+        >
+        <a class="layout-switcher" data-id="layout-menu-top"
+          ><div class="preview layout top">Top</div></a
+        >
+        <a class="layout-switcher" data-id="layout-menu-bottom"
+          ><div class="preview layout bottom">Bottom</div></a
+        >
+      </div>
+    </div>
+    <!-- /Demo Color changer -->
+
+    <script src="assets/js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f826eb8975.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/js/pages-switcher.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/validator.js"></script>
+    <script src="assets/js/jquery.shuffle.min.js"></script>
+    <script src="assets/js/masonry.pkgd.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/js/tilt.jquery.min.js"></script>
+    <script src="assets/js/jquery.hoverdir.js"></script>
+
+    <!-- Demo Color changer Script -->
+    <script src="assets/preview/lmpixels-demo-panel.js"></script>
+    <!-- /Demo Color changer Script -->
   </body>
->>>>>>> 5f9f33a077721f8bb0e132a2d4c6da5a3d7f0f07
 </html>
