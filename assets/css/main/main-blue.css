@@ -5,12 +5,12 @@ html {
 }
 
 body {
-    font-family: pt sans, Helvetica, sans-serif;
+    font-family: 'PT Sans', sans-serif;
     color: #555;
     margin: 0;
     height: 100%;
     font-size: 16px;
-    line-height: 1.5em
+    line-height: 1.5em;
 }
 
 a {
@@ -41,7 +41,7 @@ h4,
 h5,
 h6 {
     color: #222;
-    font-family: oxygen, Helvetica, sans-serif;
+    font-family: 'Oxygen', sans-serif;
     font-weight: 700;
     line-height: 1.5em;
     margin-top: 0;
@@ -94,12 +94,12 @@ a.button {
     line-height: 1.2;
     border: 0;
     outline: 0;
-    border: 2px solid #4d91de;
+    border: 2px solid #ff724c;
     color: #222;
     text-shadow: none;
     background: 0 0;
     border-radius: 0;
-    font-family: pt sans, Helvetica, sans-serif
+    font-family: 'PT Sans', sans-serif;
 }
 
 .btn {
@@ -109,8 +109,8 @@ a.button {
 input[type=submit]:hover,
 input[type=submit]:focus,
 input[type=button]:focus,
-button:hover,
-button:focus,
+.button:hover,
+.button:focus,
 a.button:hover,
 a.button:focus {
     color: #fff;
@@ -166,7 +166,7 @@ a.button:focus {
     -moz-box-shadow: none;
     box-shadow: none;
     outline: none;
-    font-family: pt sans, Helvetica, sans-serif
+    font-family: 'PT Sans', sans-serif;
 }
 
 textarea.form-control,
@@ -254,10 +254,6 @@ textarea.form-control:focus {
     padding: 0
 }
 
-.subpage-block {
-    margin-bottom: 30px
-}
-
 .text-rotation {
     display: block
 }
@@ -270,7 +266,7 @@ textarea.form-control:focus {
     height: 40px;
     border-top: 2px solid #4d91de;
     border-left: 2px solid #4d91de;
-    left: 0;
+    right: 0;
     top: 0;
     z-index: 0
 }
@@ -406,7 +402,7 @@ textarea.form-control:focus {
     height: 100%;
     padding: 0;
     padding: 25px 5%;
-    background-color: #f5f5f5;
+    /*background-color: #f5f5f5;*/
     background-attachment: fixed;
     background-position: 50%;
     background-size: cover;
@@ -457,7 +453,8 @@ textarea.form-control:focus {
 
 .pt-page .section-inner {
     position: relative;
-    padding: 20px 60px 50px
+    padding: 20px 60px 50px;
+    background-color: transparent;
 }
 
 .no-js .pt-page {
@@ -584,7 +581,7 @@ p.site-description {
     color: #f5f5f5;
     font-size: 14px;
     font-weight: 300;
-    font-family: oxygen, Helvetica, sans-serif;
+    font-family: 'Oxygen', sans-serif;
     margin: 5px 0
 }
 
@@ -852,7 +849,7 @@ ul.social-links li:last-child a {
 .section-title-wrapper {
     display: inline-block;
     position: relative;
-    text-align: right
+    text-align: center
 }
 
 .section-title {
@@ -862,7 +859,7 @@ ul.social-links li:last-child a {
     margin: 12px 0 0;
     font-size: 60px;
     line-height: 1.1em;
-    color: #eee;
+    color: #999;
     z-index: 1
 }
 
@@ -930,8 +927,8 @@ ul.social-links li:last-child a {
 .home-page-description {
     color: #222;
     font-size: 21px;
-    font-weight: 300;
-    font-family: oxygen, Helvetica, sans-serif;
+    font-weight: 900;
+    font-family: 'Oxygen', sans-serif;
     margin: 0 0 5px;
     text-align: center
 }
@@ -957,7 +954,7 @@ ul.social-links li:last-child a {
 
 .info-list li .title {
     display: inline-block;
-    font-family: oxygen, Helvetica, sans-serif;
+    font-family: 'Oxygen', sans-serif;
     font-weight: 700;
     margin-right: 12px;
     color: #222
@@ -973,7 +970,8 @@ ul.social-links li:last-child a {
 }
 
 .info-list li .value {
-    font-family: pt sans, Helvetica, sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    ;
     min-width: 250px
 }
 
@@ -1063,7 +1061,7 @@ ul.social-links li:last-child a {
 .testimonial-author {
     display: inline-block;
     font-size: 15px;
-    font-family: oxygen, Helvetica, sans-serif;
+    font-family: 'Oxygen', sans-serif;
     color: #222;
     margin: 0;
     font-weight: 400
@@ -1773,9 +1771,9 @@ ul.social-links li:last-child a {
         float: left;
         font-size: 18px;
         font-weight: 400;
-        font-family: oxygen, Helvetica, sans-serif;
+        font-family: 'Oxygen', sans-serif;
         margin: 0;
-        line-height: 50px
+        line-height: 45px
     }
 
     .site-title-block .site-description {
@@ -1950,7 +1948,7 @@ ul.social-links li:last-child a {
 }
 
 .template-style-dark .home-page-description {
-    color: #222
+    color: #fff
 }
 
 .template-style-dark .info-list li .title {

@@ -1,13 +1,20 @@
 (function ($) {
   "use strict";
+
+  // Función para inicializar el portafolio
   function portfolio_init() {
-    var portfolio_grid = $("#portfolio_grid"),
-      portfolio_filter = $("#portfolio_filters");
+    var portfolio_grid = $("#portfolio_grid");
+    var portfolio_filter = $("#portfolio_filters");
+
     if (portfolio_grid) {
       portfolio_grid.shuffle({ speed: 450, itemSelector: "figure" });
+
+      // Actualizar el portafolio cuando se haga clic en un enlace del menú
       $(".site-main-menu").on("click", "a", function (e) {
         portfolio_grid.shuffle("update");
       });
+
+      // Filtrar el portafolio cuando se haga clic en un filtro
       portfolio_filter.on("click", ".filter", function (e) {
         portfolio_grid.shuffle("update");
         e.preventDefault();
@@ -17,40 +24,58 @@
       });
     }
   }
+
+  // Validación y envío del formulario de contacto
   $(function () {
-    $("#contact-form").validator();
+
     $("#contact-form").on("submit", function (e) {
-      if (!e.isDefaultPrevented()) {
-        var url = "contact_form/contact_form.php";
-        $.ajax({
-          type: "POST",
-          url: url,
-          data: $(this).serialize(),
-          success: function (data) {
-            var messageAlert = "alert-" + data.type;
-            var messageText = data.message;
-            var alertBox =
-              '<div class="alert ' +
-              messageAlert +
-              ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' +
-              messageText +
-              "</div>";
-            if (messageAlert && messageText) {
-              $("#contact-form").find(".messages").html(alertBox);
-              $("#contact-form")[0].reset();
-            }
-          },
-        });
-        return false;
-      }
+        e.preventDefault();
+
+        var alertPlaceholder = document.getElementById('liveAlertPlaceholder');
+
+        var appendAlert = (message, type) => {
+            var wrapper = document.createElement('div');
+            var alertDiv = document.createElement('div');
+
+            wrapper.classList.add('alert', `alert-${type}`, 'alert-dismissible');
+            alertDiv.innerText = message;
+            alertDiv.style.marginBottom = '0';
+            wrapper.appendChild(alertDiv);
+
+            var closeBtn = document.createElement('button');
+            closeBtn.type = 'button';
+            closeBtn.classList.add('btn-close');
+            closeBtn.setAttribute('data-bs-dismiss', 'alert');
+            closeBtn.setAttribute('aria-label', 'Close');
+            wrapper.appendChild(closeBtn);
+
+            alertPlaceholder.innerHTML = '';
+            alertPlaceholder.appendChild(wrapper);
+
+            setTimeout(function () {
+                wrapper.style.opacity = '0';
+                setTimeout(function () {
+                    alertPlaceholder.innerHTML = '';
+                }, 600); 
+            }, 1000);
+        };
+        var form = document.getElementById('contact-form');
+        if (!form.checkValidity()) {
+            form.classList.add('was-validated');
+        } else {
+            form.submit();
+        }
     });
-  });
+});
+  // Función para ocultar el menú móvil
   function mobileMenuHide() {
     var windowWidth = $(window).width();
     if (windowWidth < 1024) {
       $("#site_header").addClass("mobile-menu-hide");
     }
   }
+
+  // Función para personalizar el scroll
   function customScroll() {
     var windowWidth = $(window).width();
     if (windowWidth > 991) {
@@ -61,6 +86,8 @@
       $("#site_header").mCustomScrollbar("destroy");
     }
   }
+
+  // Eventos de carga y redimensionamiento de la ventana
   $(window)
     .on("load", function () {
       $(".preloader").fadeOut("slow");
@@ -74,23 +101,30 @@
       mobileMenuHide();
       customScroll();
     });
-  $(document).on("ready", function () {
-    demoPanel;
+
+  // Documento listo
+  $(document).ready(function () {
+    portfolio_init(); // Inicializar el portafolio
     var $portfolio_container = $("#portfolio_grid");
+
+    // Inicializar hoverdir en elementos del portafolio
     $portfolio_container.imagesLoaded(function () {
       setTimeout(function () {
-        portfolio_init(this);
+        portfolio_init();
       }, 500);
     });
     $(" #portfolio_grid > figure > a ").each(function () {
       $(this).hoverdir();
     });
+    // Mostrar/ocultar menú móvil
     $(".menu-toggle").on("click", function (event) {
       $("#site_header").toggleClass("mobile-menu-hide");
     });
+    // Ocultar menú móvil al hacer clic en un enlace del menú
     $(".site-main-menu").on("click", "a", function (e) {
       mobileMenuHide();
     });
+    // Configuración del carrusel de texto
     $(".text-rotation").owlCarousel({
       loop: true,
       dots: false,
@@ -103,6 +137,7 @@
       animateOut: "zoomOut",
       animateIn: "zoomIn",
     });
+    // Configuración de lightbox
     $(".lightbox").magnificPopup({
       type: "image",
       removalDelay: 300,
@@ -136,12 +171,15 @@
         },
       },
     });
+    // Carga de páginas a través de AJAX
     $(".ajax-page-load-link").magnificPopup({
       type: "ajax",
       removalDelay: 300,
       mainClass: "mfp-fade",
       gallery: { enabled: true },
     });
+
+    // Efecto de inclinación en elementos
     $(".tilt-effect").tilt({});
   });
 })(jQuery);

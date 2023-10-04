@@ -1,54 +1,11 @@
-/*
-* Template Name: Unique - Responsive vCard Template
-* Author: lmpixels
-* Author URL: http://themeforest.net/user/lmpixels
-* Version: 1.0
-*/
-
-/* =============================================================================
-
-1. Fonts
-2. General styles (Buttons, Inputs, Typography)
-3. Page loading animation
-4. Subpages changer
-5. Site header (Panel with logo & navigation)
-6. Site content
-7. Subpages
-  7.1. Home subpage
-  7.2. About Me subpage
-  7.3. Resume subpage
-  7.4. Portfolio subpage
-  7.5. Contact subpage
-8. Sliders (testimonials & portfolio carousels)
-9. Portfolio Full info page
-10. Media Queries
-11. Template Customization (Light or Dark style, Header background color, Header position)
-
-============================================================================= */
-
-
-/* ============================================================================= 
-1. Fonts
-============================================================================= */
-/* 7 stroke icons font by Pixeden */
-@import url('pe-icon-7-stroke.css'); /* Full icons list: http://themes-pixeden.com/font-demos/7-stroke/index.html */
-
-/* Font awesome icons font */
-@import url('font-awesome.css'); /* Full icons list: http://fontawesome.io/icons/ */
-
-/* Google fonts */
-@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Oxygen:300,400,700");
-
-
-/* ============================================================================= 
-2. General styles
-============================================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 html {
   height: 100%;
 }
+
 body {
-  font-family: 'PT Sans', Helvetica, sans-serif;
+  font-family: 'PT Sans', sans-serif;
   color: #555;
   margin: 0;
   height: 100%;
@@ -77,9 +34,14 @@ a:focus {
   outline: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #222;
-  font-family: 'Oxygen', Helvetica, sans-serif;
+  font-family: 'Oxygen', sans-serif;
   font-weight: 700;
   line-height: 1.5em;
   margin-top: 0;
@@ -121,7 +83,10 @@ img {
 }
 
 /* Buttons */
-input[type=submit], input[type=button], button, a.button {
+input[type=submit],
+input[type=button],
+button,
+a.button {
   display: inline-block;
   position: relative;
   padding: 0.8em 2em;
@@ -135,16 +100,24 @@ input[type=submit], input[type=button], button, a.button {
   text-shadow: none;
   background: none;
   border-radius: 0;
-  font-family: 'PT Sans', Helvetica, sans-serif;
+  font-family: 'PT Sans', sans-serif;
 }
+
 .btn {
   border-radius: 0;
 }
 
-input[type=submit]:hover, input[type=submit]:focus, input[type=button]:focus, button:hover, button:focus, a.button:hover, a.button:focus {
+input[type=submit]:hover,
+input[type=submit]:focus,
+input[type=button]:focus,
+.button:hover,
+.button:focus,
+a.button:hover,
+a.button:focus {
   color: #fff;
   background-color: #8bcf00;
 }
+
 /* /Buttons */
 
 /* Custom Scroll */
@@ -167,6 +140,7 @@ input[type=submit]:hover, input[type=submit]:focus, input[type=button]:focus, bu
 .mCSB_scrollTools .mCSB_draggerRail {
   background-color: #e5e5e5;
 }
+
 /* /Custom Scroll */
 
 /* Form controls */
@@ -174,6 +148,7 @@ input[type=submit]:hover, input[type=submit]:focus, input[type=button]:focus, bu
   position: relative;
   margin: 0 0 20px;
 }
+
 .form-control,
 .form-control:focus {
   height: 42px;
@@ -198,14 +173,15 @@ input[type=submit]:hover, input[type=submit]:focus, input[type=button]:focus, bu
   -moz-box-shadow: none;
   box-shadow: none;
   outline: none;
-  font-family: 'PT Sans', Helvetica, sans-serif;
+  font-family: 'PT Sans', sans-serif;
 }
 
-textarea.form-control, textarea.form-control:focus {
+textarea.form-control,
+textarea.form-control:focus {
   height: auto;
 }
 
-.form-control + .form-control-border {
+.form-control+.form-control-border {
   content: "";
   position: absolute;
   z-index: -1;
@@ -221,13 +197,13 @@ textarea.form-control, textarea.form-control:focus {
   transition: all 0.4s ease-in-out;
 }
 
-.form-control:focus + .form-control-border {
+.form-control:focus+.form-control-border {
   left: 0;
   right: 0;
   z-index: 1;
 }
 
-.has-error .form-control + .form-control-border {
+.has-error .form-control+.form-control-border {
   background: #ff4c4c;
 }
 
@@ -239,7 +215,7 @@ textarea.form-control, textarea.form-control:focus {
   color: #aaa;
 }
 
-.form-control:focus + .form-control-border + .form-control-icon {
+.form-control:focus+.form-control-border+.form-control-icon {
   color: #8bcf00;
 }
 
@@ -255,6 +231,7 @@ textarea.form-control, textarea.form-control:focus {
 .form-control::-webkit-input-placeholder {
   color: #aaa;
 }
+
 /* /Placeholders */
 
 .form-group .help-block {
@@ -278,9 +255,11 @@ textarea.form-control, textarea.form-control:focus {
   border-bottom: 10px solid #ff4c4c;
   border-right: 10px solid transparent;
 }
+
 .form-group .help-block:empty {
   display: none;
 }
+
 /* /Form controls */
 
 .no-padding {
@@ -351,7 +330,10 @@ textarea.form-control, textarea.form-control:focus {
 /* ============================================================================= 
 3. Page loadig animation
 ============================================================================= */
-.no-js .preloader { display: none;  }
+.no-js .preloader {
+  display: none;
+}
+
 .preloader {
   position: fixed;
   left: 0px;
@@ -375,7 +357,8 @@ textarea.form-control, textarea.form-control:focus {
   animation: rotate 2.0s infinite linear;
 }
 
-.dot1, .dot2 {
+.dot1,
+.dot2 {
   width: 60%;
   height: 60%;
   display: inline-block;
@@ -395,7 +378,7 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 @-webkit-keyframes rotate {
-  100% { 
+  100% {
     -webkit-transform: rotate(360deg);
   }
 }
@@ -408,21 +391,26 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 @-webkit-keyframes bounce {
+
   0%,
   100% {
     -webkit-transform: scale(0.0);
   }
+
   50% {
     -webkit-transform: scale(1.0);
   }
 }
 
 @keyframes bounce {
+
   0%,
-  100% { 
+  100% {
     transform: scale(0.0);
     -webkit-transform: scale(0.0);
-  } 50% { 
+  }
+
+  50% {
     transform: scale(1.0);
     -webkit-transform: scale(1.0);
   }
@@ -438,7 +426,7 @@ textarea.form-control, textarea.form-control:focus {
   height: 100%;
   padding: 0;
   padding: 25px 5%;
-  background-color: #f5f5f5;
+  /*background-color: #f5f5f5;*/
   background-attachment: fixed;
   background-position: 50%;
   background-size: cover;
@@ -482,9 +470,9 @@ textarea.form-control, textarea.form-control:focus {
   -moz-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-box-shadow: 0 1px 33px rgba(0,0,0,0.15);
-  -moz-box-shadow: 0 1px 33px rgba(0,0,0,0.15);
-  box-shadow: 0 1px 33px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 0 1px 33px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 33px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 33px rgba(0, 0, 0, 0.15);
 }
 
 .pt-page .section-inner {
@@ -547,7 +535,8 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .section-with-bg {
-  -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+  -webkit-backface-visibility: hidden;
+  /* Chrome, Safari, Opera */
   backface-visibility: hidden;
   background-attachment: fixed;
   background-position: 50%;
@@ -568,6 +557,7 @@ textarea.form-control, textarea.form-control:focus {
 .section-paddings-0 {
   padding: 0;
 }
+
 /* /Page changer */
 
 /* ============================================================================= 
@@ -579,9 +569,9 @@ textarea.form-control, textarea.form-control:focus {
   height: 100%;
   background-color: #8bcf00;
   overflow: auto;
-  -webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.2);
-  -moz-box-shadow: 0 1px 10px rgba(0,0,0,0.2);
-  box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
   z-index: 10;
 }
 
@@ -621,7 +611,7 @@ p.site-description {
   color: #f5f5f5;
   font-size: 14px;
   font-weight: 300;
-  font-family: 'Oxygen', Helvetica, sans-serif;
+  font-family: 'Oxygen', sans-serif;
   margin: 5px 0;
 }
 
@@ -665,6 +655,7 @@ ul.social-links li a i {
 ul.social-links li:last-child a {
   margin-right: 0;
 }
+
 /* /Social links */
 
 .menu-toggle {
@@ -704,11 +695,12 @@ ul.social-links li:last-child a {
   display: block;
   padding: 25px 0 30px;
 }
+
 .site-main-menu {
   display: block;
   padding: 0;
   margin: 0;
-  font-family: 'Oxygen', Helvetica, sans-serif;
+  font-family: 'Oxygen', sans-serif;
 }
 
 .site-main-menu li {
@@ -731,11 +723,11 @@ ul.social-links li:last-child a {
   text-decoration: none;
   outline: none;
   opacity: 0.6;
-  border-bottom: 1px solid rgba(255,255,255,0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .site-main-menu li:first-child a {
-  border-top: 1px solid rgba(255,255,255,0.12);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .site-main-menu li a:hover,
@@ -772,11 +764,13 @@ ul.social-links li:last-child a {
   margin-bottom: 3px;
   text-align: center;
 }
+
 /* /Main menu */
 
 
 /* Main menu Top or Bottom Layout Styles*/
 @media only screen and (min-width: 992px) {
+
   .layout-menu-top,
   .layout-menu-bottom {
     overflow: hidden;
@@ -843,21 +837,21 @@ ul.social-links li:last-child a {
   .layout-menu-bottom .site-main-menu li a:after,
   .layout-menu-top .site-main-menu li.active a:after,
   .layout-menu-bottom .site-main-menu li.active a:after {
-      content: "";
-      position: absolute;
-      z-index: 1;
-      width: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      margin: 0 auto;
-      background-color: #8bcf00;
-      height: 2px;
-      -webkit-transition: width 0.3s ease-in-out;
-      -moz-transition: width 0.3s ease-in-out;
-      -o-transition: width 0.3s ease-in-out;
-      -ms-transition: width 0.3s ease-in-out;
-      transition: width 0.3s ease-in-out;
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    background-color: #8bcf00;
+    height: 2px;
+    -webkit-transition: width 0.3s ease-in-out;
+    -moz-transition: width 0.3s ease-in-out;
+    -o-transition: width 0.3s ease-in-out;
+    -ms-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
   }
 
   .layout-menu-top .site-main-menu li a:hover:after,
@@ -913,7 +907,7 @@ ul.social-links li:last-child a {
   margin: 12px 0 0;
   font-size: 60px;
   line-height: 1.1em;
-  color: #eee;
+  color: #999;
   z-index: 1;
 }
 
@@ -967,7 +961,7 @@ ul.social-links li:last-child a {
 }
 
 .table-v-align,
-.table > div {
+.table>div {
   display: table-cell;
   vertical-align: middle;
 }
@@ -989,8 +983,8 @@ ul.social-links li:last-child a {
 .home-page-description {
   color: #222;
   font-size: 21px;
-  font-weight: 300;
-  font-family: 'Oxygen', Helvetica, sans-serif;
+  font-weight: 900;
+  font-family: 'Oxygen', sans-serif;
   margin: 0 0 5px;
   text-align: center;
 }
@@ -1023,25 +1017,26 @@ ul.social-links li:last-child a {
 
 .info-list li .title {
   display: inline-block;
-  font-family: 'Oxygen', Helvetica, sans-serif;
+  font-family: 'Oxygen', sans-serif;
   font-weight: 700;
   margin-right: 12px;
   color: #222;
 }
 
 .info-list li .title:after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px;
-    margin-top: -3px;
-    background-color: #8bcf00;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: -3px;
+  background-color: #8bcf00;
 }
 
 .info-list li .value {
-  font-family: 'PT Sans', Helvetica, sans-serif;
+  font-family: 'PT Sans', sans-serif;
   min-width: 250px;
 }
+
 /* /About me list */
 
 /* Services */
@@ -1060,6 +1055,7 @@ ul.social-links li:last-child a {
   color: #8bcf00;
   margin: 5px 0 18px;
 }
+
 /* /Services */
 
 /* Clients */
@@ -1081,6 +1077,7 @@ ul.social-links li:last-child a {
 .client-block img {
   max-width: 80px;
 }
+
 /* /Clients */
 
 /* Fun Facts */
@@ -1115,6 +1112,7 @@ ul.social-links li:last-child a {
   margin: 10px 0;
   color: #8bcf00;
 }
+
 /* /Fun Facts */
 
 /* Testimonials */
@@ -1137,7 +1135,7 @@ ul.social-links li:last-child a {
 .testimonial-author {
   display: inline-block;
   font-size: 15px;
-  font-family: 'Oxygen', Helvetica, sans-serif;
+  font-family: 'Oxygen', sans-serif;
   color: #222;
   margin: 0;
   font-weight: 400;
@@ -1194,6 +1192,7 @@ ul.social-links li:last-child a {
   font-style: italic;
   font-weight: lighter
 }
+
 /* /Testimonials */
 
 
@@ -1206,21 +1205,21 @@ ul.social-links li:last-child a {
   border-left: 1px solid #f5f5f5;
   padding-bottom: 10px;
 }
-  
+
 .timeline-event {
   position: relative;
   padding-left: 20px;
   padding-bottom: 20px;
 }
-  
+
 .timeline-event:last-child {
   padding-bottom: 0px;
 }
 
-.timeline-event > * {
+.timeline-event>* {
   display: block;
 }
-  
+
 .event-date {
   display: inline-block;
   position: relative;
@@ -1271,10 +1270,10 @@ ul.social-links li:last-child a {
   margin-bottom: 30px;
 }
 
-.skills-info h4 { 
+.skills-info h4 {
   font-size: 0.8em;
   line-height: 1.1em;
-  position: relative; 
+  position: relative;
   margin: 0 0 5px;
 }
 
@@ -1295,6 +1294,7 @@ ul.social-links li:last-child a {
   height: 10px;
   padding: 0;
 }
+
 /* Animate skills on subpage load */
 .pt-page .skill-percentage {
   -webkit-transition: all 2s ease-in-out;
@@ -1303,6 +1303,7 @@ ul.social-links li:last-child a {
   -ms-transition: all 2s ease-in-out;
   transition: all 2s ease-in-out;
 }
+
 .js .pt-page:not(.pt-page-current) .skill-percentage {
   width: 0;
 }
@@ -1311,34 +1312,42 @@ ul.social-links li:last-child a {
 .skill-percentage.skill-1 {
   width: 88%;
 }
+
 /*Skill 2*/
 .skill-percentage.skill-2 {
   width: 75%;
 }
+
 /*Skill 3*/
 .skill-percentage.skill-3 {
   width: 60%;
 }
+
 /*Skill 4*/
 .skill-percentage.skill-4 {
   width: 95%;
 }
+
 /*Skill 5*/
 .skill-percentage.skill-5 {
   width: 85%;
 }
+
 /*Skill 6*/
 .skill-percentage.skill-6 {
   width: 72%;
 }
+
 /*Skill 7*/
 .skill-percentage.skill-7 {
   width: 60%;
 }
+
 /*Skill 8*/
 .skill-percentage.skill-8 {
   width: 77%;
 }
+
 /* Skills */
 
 
@@ -1368,6 +1377,7 @@ ul.social-links li:last-child a {
   margin: 0 0 2em;
   text-align: center;
 }
+
 .portfolio-filters li {
   display: inline-block;
 }
@@ -1424,7 +1434,7 @@ ul.social-links li:last-child a {
 .portfolio-grid figure a div {
   position: absolute;
   background: #f5f5f5;
-  background: rgba(245,245,245,0.95);
+  background: rgba(245, 245, 245, 0.95);
   width: 100%;
   height: 100%;
   color: #888;
@@ -1458,13 +1468,14 @@ ul.social-links li:last-child a {
   padding: 10px 0;
   text-transform: uppercase;
   font-weight: normal;
-  color: rgba(255,255,255,0.9);
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-  border-bottom: 1px solid rgba(255,255,255,0.5);
-  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
-  -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
-  box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 -10px 0 rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 -10px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 -10px 0 rgba(255, 255, 255, 0.3);
 }
+
 /* End of Direction-Aware Hover Effect */
 
 
@@ -1506,6 +1517,7 @@ ul.social-links li:last-child a {
   font-size: 30px;
   color: #8bcf00;
 }
+
 /* /Contact info */
 
 
@@ -1562,6 +1574,7 @@ ul.social-links li:last-child a {
 .testimonials.owl-carousel .owl-nav .owl-next:before {
   content: "\f105";
 }
+
 /* /Testimonials Carousel */
 
 /* Portfolio Carousel */
@@ -1641,7 +1654,8 @@ ul.social-links li:last-child a {
   display: inline-block;
 }
 
-.portfolio-page-carousel .owl-dots .owl-dot.active span, .portfolio-page-carousel .owl-dots .owl-dot:hover span {
+.portfolio-page-carousel .owl-dots .owl-dot.active span,
+.portfolio-page-carousel .owl-dots .owl-dot:hover span {
   background: #888;
 }
 
@@ -1656,6 +1670,7 @@ ul.social-links li:last-child a {
   transition: opacity 200ms ease;
   border-radius: 30px;
 }
+
 /* Portfolio Carousel */
 
 
@@ -1692,13 +1707,13 @@ ul.social-links li:last-child a {
   text-align: center;
 }
 
-.ajax-page-nav > div.nav-item {
+.ajax-page-nav>div.nav-item {
   position: relative;
   display: inline-block;
   margin: 0 3px;
 }
 
-.ajax-page-nav > div.nav-item a {
+.ajax-page-nav>div.nav-item a {
   display: inline-block;
   height: 30px;
   width: 30px;
@@ -1706,11 +1721,11 @@ ul.social-links li:last-child a {
   color: #888;
 }
 
-.ajax-page-nav > div.nav-item a:hover {
+.ajax-page-nav>div.nav-item a:hover {
   color: #8bcf00;
 }
 
-.ajax-page-nav > div.nav-item a i {
+.ajax-page-nav>div.nav-item a i {
   line-height: 30px;
   font-size: 30px;
 }
@@ -1748,7 +1763,7 @@ ul.social-links li:last-child a {
 }
 
 .project-general-info li {
-  margin : 0 0 10px;
+  margin: 0 0 10px;
 }
 
 .project-general-info .fa {
@@ -1814,6 +1829,7 @@ ul.social-links li:last-child a {
   background-color: #fff;
   border: 1px solid #e5e5e5;
 }
+
 /* /Tags Block */
 
 
@@ -1850,9 +1866,9 @@ ul.social-links li:last-child a {
     height: calc(100% - 50px);
     top: 50px;
     z-index: 999;
-    -webkit-box-shadow: 5px 0px 20px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: 5px 0px 20px 0px rgba(0,0,0,0.1);
-    box-shadow: 5px 0px 20px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 5px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 5px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 0px 20px 0px rgba(0, 0, 0, 0.1);
     -webkit-transition: all 0.66s ease-in-out;
     -moz-transition: all 0.66s ease-in-out;
     -o-transition: all 0.66s ease-in-out;
@@ -1887,9 +1903,9 @@ ul.social-links li:last-child a {
     float: left;
     font-size: 18px;
     font-weight: 400;
-    font-family: 'Oxygen', Helvetica, sans-serif;
+    font-family: 'Oxygen', sans-serif;
     margin: 0;
-    line-height: 50px;
+    line-height: 45px;
   }
 
   .site-title-block .site-description {
@@ -1952,8 +1968,9 @@ ul.social-links li:last-child a {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  
-  .pt-page-current, .no-js .pt-page {
+
+  .pt-page-current,
+  .no-js .pt-page {
     overflow: auto;
   }
 
@@ -1978,7 +1995,7 @@ ul.social-links li:last-child a {
 
   .ajax-page-wrapper {
     padding-left: 20px;
-    padding-right: 20px; 
+    padding-right: 20px;
   }
 }
 
@@ -2069,7 +2086,7 @@ ul.social-links li:last-child a {
 }
 
 .template-style-dark .home-page-description {
-  color: #222;
+  color: #fff;
 }
 
 .template-style-dark .info-list li .title {
@@ -2081,20 +2098,20 @@ ul.social-links li:last-child a {
 }
 
 .template-style-dark ul.social-links li a {
-    display: inline-block;
-    margin: 0 1px;
-    width: 34px;
-    height: 34px;
-    color: #e5e5e5;
-    background-color: transparent;
-    border: 1px solid #555;
-    text-align: center;
+  display: inline-block;
+  margin: 0 1px;
+  width: 34px;
+  height: 34px;
+  color: #e5e5e5;
+  background-color: transparent;
+  border: 1px solid #555;
+  text-align: center;
 }
 
 .template-style-dark ul.social-links li a:hover {
-    color: #fff;
-    background-color: #8bcf00;
-    border-color: transparent;
+  color: #fff;
+  background-color: #8bcf00;
+  border-color: transparent;
 }
 
 .template-style-dark .testimonial-content .testimonial-text {
@@ -2128,7 +2145,7 @@ ul.social-links li:last-child a {
   border-color: #282828;
 }
 
-.template-style-dark .ajax-page-nav > div.nav-item a {
+.template-style-dark .ajax-page-nav>div.nav-item a {
   color: #aaa;
 }
 
@@ -2177,6 +2194,7 @@ ul.social-links li:last-child a {
 .header.header-color-light .site-main-menu li.active a:after {
   background-color: #8bcf00;
 }
+
 /* Header Light Color BG */
 
 /* Header Dark Color BG */
@@ -2187,12 +2205,14 @@ ul.social-links li:last-child a {
 .header.header-color-dark .my-photo .border-block-bottom-40 {
   border-color: #8bcf00;
 }
+
 /* /Header Dark Color */
 
 /* Header Main Color BG */
 .header-color-main .site-main-menu li a:after,
 .header-color-main .site-main-menu li a:hover:after,
-.header-color-main  .site-main-menu li.active a:after {
+.header-color-main .site-main-menu li.active a:after {
   background-color: #fff;
 }
+
 /* /Header Main Color BG */
