@@ -863,7 +863,7 @@ ul.social-links li:last-child a {
     margin: 12px 0 0;
     font-size: 60px;
     line-height: 1.1em;
-    color: #999;
+    color: #5555;
     z-index: 1
 }
 
@@ -1181,7 +1181,7 @@ ul.social-links li:last-child a {
 }
 
 .event-description {
-    color: #a5a5a5;
+    color: #585858;
     margin: 0 0 4px;
     font-size: 12px;
     font-weight: 300;

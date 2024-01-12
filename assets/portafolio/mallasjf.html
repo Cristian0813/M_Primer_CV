@@ -1,159 +1,178 @@
 <div id="ajax-page" class="ajax-page-content">
-    <div class="ajax-page-wrapper">
-      <div class="ajax-page-nav">
-        <div class="nav-item ajax-page-prev-next">
-          <a class="ajax-page-load" href="assets/portafolio/pokedex.html"
-            ><i class="get-font-icon bi bi-chevron-left"></i
-          ></a>
-          <a class="ajax-page-load" href="assets/portafolio/atm.html"
-            ><i class="get-font-icon bi bi-chevron-right"></i
-          ></a>
-        </div>
-        <div class="nav-item ajax-page-close-button">
-          <a id="ajax-page-close-button" href="#"
-            ><i class="get-font-icon bi bi-x"></i
-          ></a>
-        </div>
+  <div class="ajax-page-wrapper">
+    <div class="ajax-page-nav">
+      <div class="nav-item ajax-page-prev-next">
+        <a class="ajax-page-load" href="assets/portafolio/pokedex.html"
+          ><i class="get-font-icon bi bi-chevron-left"></i
+        ></a>
+        <a class="ajax-page-load" href="assets/portafolio/e-commerce.html"
+          ><i class="get-font-icon bi bi-chevron-right"></i
+        ></a>
       </div>
-  
-      <div class="ajax-page-title">
-        <h1>Mallas Jf</h1>
+      <div class="nav-item ajax-page-close-button">
+        <a id="ajax-page-close-button" href="#"
+          ><i class="get-font-icon bi bi-x"></i
+        ></a>
       </div>
-  
-      <div class="row">
-        <div class="col-sm-7 col-md-7 portfolio-block">
-          <div class="owl-carousel portfolio-page-carousel">
-            <div class="item">
-              <img src="assets/images/portfolio/mallasjf/mallasjf-1.png" alt="" />
-            </div>
-            <div class="item">
-              <img src="assets/images/portfolio/mallasjf/mallasjf-2.png" alt="" />
-            </div>
-            <div class="item">
-              <img src="assets/images/portfolio/mallasjf/mallasjf-3.png" alt="" />
-            </div>
+    </div>
+
+    <div class="ajax-page-title">
+      <h1>Proyecto final Mallas Jf</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-7 col-md-7 portfolio-block">
+        <div class="owl-carousel portfolio-page-carousel">
+          <div class="item">
+            <img
+              src="assets/images/portfolio/mallasjf/mallasjf-1.png"
+              alt="Mallasjf-1"
+              title="Mallasjf-1"
+            />
           </div>
-          <script type="text/javascript">
-            function customAjaxScroll() {
-              var windowWidth = $(window).width();
-  
-              if (windowWidth > 991) {
-                $("#ajax-page").mCustomScrollbar({
-                  scrollInertia: 8,
-                  documentTouchScroll: false,
-                });
-              } else {
-                $("#ajax-page").mCustomScrollbar("destroy");
-              }
-            }
-  
-            jQuery(document).ready(function ($) {
-              customAjaxScroll();
-  
-              $(".portfolio-page-carousel").owlCarousel({
-                smartSpeed: 1200,
-                items: 1,
-                loop: true,
-                dots: true,
-                nav: true,
-                navText: false,
-                margin: 10,
+          <div class="item">
+            <img
+              src="assets/images/portfolio/mallasjf/mallasjf-2.png"
+              alt="Mallasjf-2"
+              title="Mallasjf-2"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="assets/images/portfolio/mallasjf/mallasjf-3.png"
+              alt="Mallasjf-3"
+              title="Mallasjf-3"
+            />
+          </div>
+        </div>
+        <script type="text/javascript">
+          function customAjaxScroll() {
+            var windowWidth = $(window).width();
+
+            if (windowWidth > 991) {
+              $("#ajax-page").mCustomScrollbar({
+                scrollInertia: 8,
+                documentTouchScroll: false,
               });
+            } else {
+              $("#ajax-page").mCustomScrollbar("destroy");
+            }
+          }
+
+          jQuery(document).ready(function ($) {
+            customAjaxScroll();
+
+            $(".portfolio-page-carousel").owlCarousel({
+              smartSpeed: 1200,
+              items: 1,
+              loop: true,
+              dots: true,
+              nav: true,
+              navText: false,
+              margin: 10,
             });
-  
-            jQuery(window).on("resize", function () {
-              customAjaxScroll();
-            });
-          </script>
+          });
+
+          jQuery(window).on("resize", function () {
+            customAjaxScroll();
+          });
+        </script>
+      </div>
+
+      <div class="col-sm-5 col-md-5 portfolio-block">
+        <!-- Project Description -->
+        <div class="block-title">
+          <h3>Descripción</h3>
         </div>
-  
-        <div class="col-sm-5 col-md-5 portfolio-block">
-          <!-- Project Description -->
+        <ul class="project-general-info">
+          <li>
+            <p><i class="fa fa-user"></i>Cristian Arias</p>
+          </li>
+          <li>
+            <p>
+              <i class="fa fa-github"></i
+              ><a
+                href="https://github.com/Cristian0813/Proyecto_Final-Frontend.git"
+                target="_blank"
+                title="Repsitorio front Proyecto final Mallas Jf"
+                >Repositorio Frontend</a
+              >
+            </p>
+          </li>
+          <li>
+            <p>
+              <i class="fa fa-github"></i
+              ><a
+                href="https://github.com/Cristian0813/Proyecto_Final_Backend.git"
+                target="_blank"
+                title="Repsitorio back Proyecto final Mallas Jf"
+                >Repositorio Backend</a
+              >
+            </p>
+          </li>
+          <li>
+            <p>
+              <i class="fa fa-globe"></i>
+              <a href="https://cerrajeriamalla.netlify.app/" target="_blank"
+              title="Página demo Proyecto final Mallas Jf"
+                >Mallas Jf</a
+              >
+            </p>
+          </li>
+          <li>
+            <p><i class="fa fa-calendar"></i> Julio del 2023</p>
+          </li>
+        </ul>
+
+        <p class="text-justify">
+          Se trata de una plataforma web interactiva que simula una cerrajería,
+          proporcionando a los clientes una experiencia fluida y accesible. A
+          través de esta plataforma, los usuarios pueden explorar una variedad
+          de servicios de cerrajería, realizar consultas detalladas. (<span
+            style="font-weight: bold"
+            >Se encuentra aún en construcción</span
+          >)
+        </p>
+        <!-- /Project Description -->
+
+        <!-- Technology -->
+        <div class="share-buttons tags-block">
           <div class="block-title">
-            <h3>Descripción</h3>
+            <h3>Tecnologías usadas:</h3>
           </div>
-          <ul class="project-general-info">
-            <li>
-              <p><i class="fa fa-user"></i>Cristian Arias</p>
-            </li>
-            <li>
-              <p>
-                <i class="fa fa-github"></i
-                ><a
-                  href="https://github.com/Cristian0813/Proyecto_final_frontend.git"
-                  target="_blank"
-                  >Repositorio Frontend</a
-                >
-              </p>
-            </li>
-            <li>
-                <p>
-                  <i class="fa fa-github"></i
-                  ><a
-                    href="https://github.com/Cristian0813/Proyecto_final_backend.git"
-                    target="_blank"
-                    >Repositorio Backend</a
-                  >
-                </p>
-              </li>
-            <li>
-              <p>
-                <i class="fa fa-globe"></i>
-                <a href="https://cerrajeriamalla.netlify.app/" target="_blank"
-                  >Mallas Jf</a
-                >
-              </p>
-            </li>
-            <li>
-              <p><i class="fa fa-calendar"></i> 26 de julio del 2023</p>
-            </li>
-          </ul>
-  
-          <p class="text-justify">
-            Es un sitio web interactivo que simula una cerrajería, brindando una experiencia fluida y fácil de usar para los clientes. 
-            o el buscador.
-          </p>
-          <!-- /Project Description -->
-  
-          <!-- Technology -->
-          <div class="share-buttons tags-block">
-            <div class="block-title">
-              <h3>Tecnologías usadas:</h3>
-            </div>
-            <div class="tags">
-              <a
-                class="btn"
-                target="_blank"
-                href="https://www.w3schools.com/react/"
-                title="ReactJs"
-                ><i class="fa-brands fa-react"></i
-              ></a>
-              <a
-                class="btn"
-                target="_blank"
-                href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
-                title="Bootstrap"
-                ><i class="fa-brands fa-bootstrap"></i
-              ></a>
-              <a
-                class="btn"
-                target="_blank"
-                href="https://es.vitejs.dev/guide/"
-                title="ViteJst"
-                ><i class="fa-brands fa-vuejs"></i
-              ></a>
-              <a
-                class="btn"
-                target="_blank"
-                href="https://www.w3schools.com/nodejs/"
-                title="NodeJs"
-                ><i class="fa-brands fa-node-js"></i
-              ></a>
-            </div>
+          <div class="tags">
+            <a
+              class="btn"
+              target="_blank"
+              href="https://react.dev/learn"
+              title="ReactJs"
+              ><i class="fa-brands fa-react"></i
+            ></a>
+            <a
+              class="btn"
+              target="_blank"
+              href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+              title="Bootstrap"
+              ><i class="fa-brands fa-bootstrap"></i
+            ></a>
+            <a
+              class="btn"
+              target="_blank"
+              href="https://es.vitejs.dev/guide/"
+              title="ViteJst"
+              ><i class="fa-brands fa-vuejs"></i
+            ></a>
+            <a
+              class="btn"
+              target="_blank"
+              href="https://www.w3schools.com/nodejs/"
+              title="NodeJs"
+              ><i class="fa-brands fa-node-js"></i
+            ></a>
           </div>
-          <!-- /Technology -->
         </div>
+        <!-- /Technology -->
       </div>
     </div>
   </div>
-  
+</div>
