@@ -79,14 +79,21 @@
   function customScroll() {
     var windowWidth = $(window).width();
     if (windowWidth > 991) {
-      $(".pt-page").mCustomScrollbar({ scrollInertia: 8 });
-      $("#site_header").mCustomScrollbar({ scrollInertia: 8 });
+        // Asegúrate de que la biblioteca mCustomScrollbar se haya cargado y sea una función
+        if ($.isFunction($.fn.mCustomScrollbar)) {
+            $(".pt-page").mCustomScrollbar({ scrollInertia: 8 });
+            $("#site_header").mCustomScrollbar({ scrollInertia: 8 });
+        } else {
+            console.error("mCustomScrollbar not loaded");
+        }
     } else {
-      $(".pt-page").mCustomScrollbar("destroy");
-      $("#site_header").mCustomScrollbar("destroy");
+        // Verifica si mCustomScrollbar existe antes de intentar destruirlo
+        if ($.isFunction($.fn.mCustomScrollbar)) {
+            $(".pt-page").mCustomScrollbar("destroy");
+            $("#site_header").mCustomScrollbar("destroy");
+        }
     }
   }
-
   // Eventos de carga y redimensionamiento de la ventana
   $(window)
     .on("load", function () {
