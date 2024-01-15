@@ -1,6 +1,6 @@
 var PageTransitions = (function (a, e) {
   "use strict";
-  var t = "inicio",
+  var t = "Inicio",
     p = a(".subpages"),
     o = !1,
     r = !0,
@@ -12,6 +12,8 @@ var PageTransitions = (function (a, e) {
       animation: "animationend",
     }[Modernizr.prefixed("animation")],
     s = Modernizr.cssanimations;
+
+    // Función para marcar como activo el elemento de menú correspondiente a la página actual  
   function i(e) {
     if (!e) return !1;
     var t = a(e);
@@ -19,6 +21,8 @@ var PageTransitions = (function (a, e) {
       (t = a(t.parentNode)) &&
         (a("ul.site-main-menu li").removeClass("active"), t.addClass("active"));
   }
+
+  // Función para manejar la carga de páginas a través de AJAX y definir eventos clic para la navegación entre páginas
   function m() {
     var e = a("#page-ajax-loaded");
     function t() {
@@ -53,6 +57,7 @@ var PageTransitions = (function (a, e) {
         return (location.hash = e), t(), !1;
       });
   }
+  // Función para realizar la animación de transición entre páginas
   function c(e, t) {
     if (!e.attr("data-animation")) {
       var i = parseInt(Math.floor(67 * Math.random()));
@@ -330,28 +335,38 @@ var PageTransitions = (function (a, e) {
       (o = t).attr("class", o.data("originalClassList")),
       p.attr("class", p.data("originalClassList") + " pt-page-current");
   }
+
+  // Inicialización del objeto PageTransitions
   return {
     init: function (e) {
       a(".pt-page").each(function () {
         var e = a(this);
         e.data("originalClassList", e.attr("class"));
-      }),
-        p.each(function () {
-          "" === location.hash &&
-            a("section[data-id=" + g + "]").addClass("pt-page-current");
-        }),
-        a(".pt-trigger").on("click", function (e) {
-          if ((e.preventDefault(), o)) return !1;
-          var t = a(this);
-          i(t), c(t), (location.hash = a(this).attr("href"));
-        }),
-        (window.onhashchange = function (e) {
-          if (location.hash) {
-            if (o) return !1;
-            var t = a(r + ' a[href*="' + location.hash.split("/")[0] + '"]');
-            i(t), c(t), m();
-          }
-        });
+      });
+    
+      p.each(function () {
+        "" === location.hash &&
+          a("section[data-id=" + g + "]").addClass("pt-page-current");
+      });
+    
+      // Manejar eventos de clic para la navegación entre páginas
+      a(".pt-trigger").on("click", function (e) {
+        if (o) return !1;
+        e.preventDefault();
+        var t = a(this);
+        i(t), c(t), history.replaceState(null, null, a(this).attr("href"));
+      });
+    
+      // Manejar eventos de cambio de hash
+      window.onhashchange = function (e) {
+        if (location.hash) {
+          if (o) return !1;
+          var t = a(r + ' a[href*="' + location.hash.split("/")[0] + '"]');
+          i(t), c(t), m();
+        }
+      };
+    
+      // Configurar estado inicial del historial y cargar la primera página
       var r = e.menu,
         g = "" === location.hash ? (location.hash = t) : location.hash;
       location.hash = g;
@@ -362,6 +377,6 @@ var PageTransitions = (function (a, e) {
           '<div id="page-ajax-loaded" class="page-ajax-loaded animated rotateInDownRight"></div>'
         ),
         m();
-    },
+    },    
   };
 })(jQuery);
