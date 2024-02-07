@@ -3,18 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Soy Cristian Javier Arias Ordoñez, un desarrollador web full-stack con experiencia en tecnologías web como JavaScript, HTML, CSS y frameworks como React y Node.js. Descubre mis proyectos y habilidades.">
     <meta
-      name="description"
-      content="¡Hola! Soy Cristian Javier Arias Ordoñez, Cristian J Arias O, Desarrollador Web Full-Stack. Creo experiencias digitales atractivas. Explora mis proyectos, conoce mi experiencia y habilidades. ¿Tienes consultas o quieres colaborar? Contáctame. ¡Descarga mi CV y descubre cómo puedo aportar a tus proyectos!"
+      property="og:title"
+      content="¡Hola! Soy Cristian Javier Arias Ordoñez, Desarrollador Web Full-Stack."
+    />
+    <meta
+      property="og:description"
+      content="Creo experiencias digitales atractivas. Explora mis proyectos, conoce mi experiencia y habilidades. ¿Tienes consultas o quieres colaborar? Contáctame. ¡Descarga mi CV y descubre cómo puedo aportar a tus proyectos!"
     />
     <meta
       name="keywords"
-      content="Cristian Javier Arias Ordoñez, Desarrollador Web Full-Stack, Frontend, Backend, experiencias digitales, proyectos, experiencia laboral, habilidades técnicas, colaboraciones, consultas, CV_Cristian_Javier_Arias_Ordonez, LinkedIn"
+      content="Cristian Javier Arias Ordoñez, Cristian J Arias O, CristianJAriasO, Cristian Arias, desarrollador web full-stack, JavaScript, HTML, CSS, React, Node.js, programación web, tecnologías web"
     />
     <meta name="robots" content="all, index, follow" />
     <meta name="author" content="Cristian Javier Arias Ordoñez" />
-
-    <title>Portafolio Cristian Javier Arias Ordoñez</title>
 
     <link rel="canonical" href="https://cristianjariaso.netlify.app/" />
     <link
@@ -70,34 +73,23 @@
     <!-- /link de estilos para la web -->
 
     <!-- Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-T6KTHVLZB0"
     ></script>
     <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "G-T6KTHVLZB0");
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-T6KTHVLZB0");
     </script>
     <!-- Fin Google Tag Manager -->
-
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/js/modernizr.custom.js"></script>
-  </head>
-
-  <body>
     <!-- Google Tag Manager (noscript) -->
+
     <noscript
       ><iframe
         src="https://www.googletagmanager.com/ns.html?id=G-T6KTHVLZB0"
@@ -107,6 +99,17 @@
       ></iframe
     ></noscript>
     <!-- Fin Google Tag Manager (noscript) -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/modernizr.custom.js"></script>
+
+    <title>Desarrollador Web Full-Stack - Cristian Javier Arias Ordoñez</title>
+  </head>
+  <body>
     <!-- Loading animacion -->
     <div class="preloader">
       <div class="preloader-animation">
@@ -477,7 +480,7 @@
                     <figure class="item" data-groups='["all", "media"]'>
                       <a
                         class="ajax-page-load"
-                        href="assets/portafolio/newshomepage.html"
+                        href="assets/portafolio/juegoquiz.html"
                         title="Juego Quiz"
                       >
                         <img
@@ -492,7 +495,7 @@
                           title="Juego Quiz"
                         />
                         <div>
-                          <h5 class="name">Juego Quiz</h5>
+                          <h5 class="name">Juego de Quiz</h5>
                           <small class="fs-6 fst-italic">Febrero-2024</small>
                           <i class="get-font-icon bi bi-display"></i>
                         </div>
@@ -503,7 +506,7 @@
                     <figure class="item" data-groups='["all", "media"]'>
                       <a
                         class="ajax-page-load"
-                        href="assets/portafolio/newshomepage.html"
+                        href="assets/portafolio/juegomemoria.html"
                         title="Juego de Memoria"
                       >
                         <img
